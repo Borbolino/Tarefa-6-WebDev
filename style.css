@@ -1,0 +1,62 @@
+body{
+  background-color: #9464c4;
+  transition: 0.4s;
+}
+
+.light {
+  background-color: #9464c4;
+}
+.dark {
+  background-color: #230a38;
+  color: #9464c4
+}
+
+.lb {
+  background-color: #fff385;
+  color: #9464c4;
+}
+
+button{
+  border: 0;
+  background-color: #fff385;
+  color: #9464c4;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: bold;
+  border-radius:5px;
+  transition: 0.4s;
+}
+
+.db {
+  background-color: #6e654b;
+  color: #230a38;
+}
+
+h1 {
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#ind:hover {
+  height: 90px;
+  border-radius: 10px;
+  
+}
+
+p {
+  color: white;
+}
+
+#ind {
+  border: 0;
+  height: 70px;
+  width: 19vw;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: bold;
+  border-radius:20px;
+  transition: 0.4s;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+}
