@@ -39,8 +39,8 @@ function changeMode() {
   }
 }
 
-const fotoUsuario = document.querySelector("#usr_img");
-const nomeUsuario = document.querySelector("#username");
+const fotoUsuario = document.querySelector("#usumagem");
+const nomeUsuario = document.querySelector("#usuario");
 async function pegaObj(p) {
   
   let ans = await fetch("https://api.github.com/users/" + p);
