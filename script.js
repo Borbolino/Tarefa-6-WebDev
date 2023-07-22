@@ -39,3 +39,26 @@ function changeMode() {
   }
 }
 
+const fotoUsuario = document.querySelector("#usr_img");
+const nomeUsuario = document.querySelector("#username");
+async function pegaObj(p) {
+  
+  let ans = await fetch("https://api.github.com/users/" + p);
+  let j = await ans.json();
+  return j;
+}
+async function updateUsuario() {
+  
+  let obj = await pegaObj("Borbolino")
+  fotoUsuario.src = obj.avatar_url;
+  nomeUsuario.innerText = obj.login;
+  let repositorio =  await pegaObj("Borbolino/repos")
+  let contador = 1
+  for(let k of github_ul.children) {
+
+    k.children[0].href = repositorio[repositorio.lenght-contador].html_url;
+    k.children[0].innerText = repositorio[repositorio.length-contador].name;
+    contador++;
+  }
+}
+updateUsuario();
